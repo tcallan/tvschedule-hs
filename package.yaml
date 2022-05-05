@@ -29,6 +29,7 @@ ghc-options:
 
 default-extensions:
 - DeriveGeneric
+- DeriveAnyClass
 - OverloadedStrings
 
 dependencies:
@@ -42,6 +43,7 @@ dependencies:
 - containers
 - blaze-html
 - dhall
+- microlens-platform
 
 library:
   source-dirs: src

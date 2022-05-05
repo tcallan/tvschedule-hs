@@ -43,8 +43,11 @@ toHtmlSeries :: SeriesSummary -> H.Html
 toHtmlSeries s = do
     H.h1 $ H.toHtml $ ssName s
     H.ul $ do
-        H.li $ H.toHtml $ "Last: " <> tshow (ssLastAir s)
-        H.li $ H.toHtml $ "Next: " <> tshow (ssNextAir s)
+        H.li $ H.toHtml $ "Last: " <> toHtmlOpt (ssLastAir s)
+        H.li $ H.toHtml $ "Next: " <> toHtmlOpt (ssNextAir s)
 
 tshow :: (Show a) => a -> Text
 tshow = pack . show
+
+toHtmlOpt :: (Show a) => Maybe a -> Text
+toHtmlOpt = maybe "?" tshow
