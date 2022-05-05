@@ -1,0 +1,108 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           tvschedule
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/tcallan/tvschedule#readme>
+homepage:       https://github.com/tcallan/tvschedule#readme
+bug-reports:    https://github.com/tcallan/tvschedule/issues
+author:         tcallan
+maintainer:     example@example.com
+copyright:      2022 tcallan
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/tcallan/tvschedule
+
+library
+  exposed-modules:
+      Schedule
+      Summary
+      Summary.Html
+      Summary.Markdown
+      TheMovieDb
+  other-modules:
+      Paths_tvschedule
+  hs-source-dirs:
+      src
+  default-extensions:
+      DeriveGeneric
+      OverloadedStrings
+  ghc-options: -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -Wnoncanonical-monad-instances
+  build-depends:
+      aeson
+    , aeson-casing
+    , base >=4.7 && <5
+    , blaze-html
+    , bytestring
+    , containers
+    , dhall
+    , req
+    , text
+    , time
+  default-language: Haskell2010
+
+executable tvschedule-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_tvschedule
+  hs-source-dirs:
+      app
+  default-extensions:
+      DeriveGeneric
+      OverloadedStrings
+  ghc-options: -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -Wnoncanonical-monad-instances -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aeson
+    , aeson-casing
+    , base >=4.7 && <5
+    , blaze-html
+    , bytestring
+    , containers
+    , dhall
+    , optparse-applicative
+    , req
+    , text
+    , time
+    , tvschedule
+  default-language: Haskell2010
+
+test-suite tvschedule-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      ScheduleSpec
+      SummarySpec
+      Paths_tvschedule
+  hs-source-dirs:
+      test
+  default-extensions:
+      DeriveGeneric
+      OverloadedStrings
+  ghc-options: -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -Wnoncanonical-monad-instances -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aeson
+    , aeson-casing
+    , base >=4.7 && <5
+    , blaze-html
+    , bytestring
+    , containers
+    , dhall
+    , quickcheck-instances
+    , req
+    , tasty
+    , tasty-hunit
+    , tasty-quickcheck
+    , text
+    , time
+    , tvschedule
+  default-language: Haskell2010

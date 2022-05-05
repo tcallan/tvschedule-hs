@@ -1,0 +1,13 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "tvschedule:lib"
+
+    - path: "./app/Main.hs"
+      component: "tvschedule:exe:tvschedule-exe"
+
+    - path: "./app/Paths_tvschedule.hs"
+      component: "tvschedule:exe:tvschedule-exe"
+
+    - path: "./test"
+      component: "tvschedule:test:tvschedule-test"
