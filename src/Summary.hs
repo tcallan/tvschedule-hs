@@ -5,12 +5,16 @@ module Summary (
     WeeklyEpisode (..),
     SeriesSummary (..),
     Summary (..),
+    tshow,
+    tshowOpt,
+    toEpNumber,
 ) where
 
+import Data.Foldable (toList)
 import Data.List (sortOn)
 import Data.Map.Strict (Map, fromListWith)
 import Data.Maybe (catMaybes)
-import Data.Text (Text)
+import Data.Text (Text, pack)
 import Data.Time (Day)
 import Network.HTTP.Req (defaultHttpConfig, runReq)
 import Schedule (getWeekContaining, today)
@@ -19,7 +23,6 @@ import TheMovieDb (
     Series (sLastEpisodeToAir, sName, sNextEpisodeToAir),
     serieses,
  )
-import Data.Foldable (toList)
 
 data Summary = Summary
     { sThisWeek :: Map Day [WeeklyEpisode]
@@ -34,6 +37,9 @@ data WeeklyEpisode = WeeklyEpisode
     , weEpisode :: !Integer
     }
     deriving (Show, Eq)
+
+toEpNumber :: WeeklyEpisode -> Text
+toEpNumber ep = (tshow . weSeason) ep <> "x" <> (tshow . weEpisode) ep
 
 data SeriesSummary = SeriesSummary
     { ssName :: !Text
@@ -86,3 +92,9 @@ getSummary token sids = do
     now <- today
 
     return $ toSummary now sxs
+
+tshow :: (Show a) => a -> Text
+tshow = pack . show
+
+tshowOpt :: (Show a) => Maybe a -> Text
+tshowOpt = maybe "?" tshow

@@ -4,7 +4,7 @@ import Control.Monad (forM_)
 import Data.Map.Strict (Map, toList)
 import Data.Text (Text, pack)
 import Data.Time (Day, dayOfWeek)
-import Summary (SeriesSummary (..), Summary (..), WeeklyEpisode (..))
+import Summary (SeriesSummary (..), Summary (..), WeeklyEpisode (..), toEpNumber, tshow, tshowOpt)
 import qualified Text.Blaze.Html.Renderer.Pretty as H
 import qualified Text.Blaze.Html5 as H
 
@@ -32,7 +32,7 @@ toHtmlWeeklyEpisode :: WeeklyEpisode -> H.Html
 toHtmlWeeklyEpisode ep =
     H.li $
         H.toHtml $
-            weSeriesName ep <> " " <> (tshow . weSeason) ep <> "x" <> (tshow . weEpisode) ep
+            weSeriesName ep <> " " <> toEpNumber ep
 
 toHtmlAll :: [SeriesSummary] -> H.Html
 toHtmlAll sxs = do
@@ -43,11 +43,5 @@ toHtmlSeries :: SeriesSummary -> H.Html
 toHtmlSeries s = do
     H.h1 $ H.toHtml $ ssName s
     H.ul $ do
-        H.li $ H.toHtml $ "Last: " <> toHtmlOpt (ssLastAir s)
-        H.li $ H.toHtml $ "Next: " <> toHtmlOpt (ssNextAir s)
-
-tshow :: (Show a) => a -> Text
-tshow = pack . show
-
-toHtmlOpt :: (Show a) => Maybe a -> Text
-toHtmlOpt = maybe "?" tshow
+        H.li $ H.toHtml $ "Last: " <> tshowOpt (ssLastAir s)
+        H.li $ H.toHtml $ "Next: " <> tshowOpt (ssNextAir s)

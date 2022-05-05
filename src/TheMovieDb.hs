@@ -1,4 +1,4 @@
-module TheMovieDb (series, serieses, Series(..), Episode(..)) where
+module TheMovieDb (series, serieses, Series (..), Episode (..)) where
 
 import Data.Aeson (FromJSON (parseJSON), genericParseJSON)
 import Data.Aeson.Casing (aesonPrefix, snakeCase)
