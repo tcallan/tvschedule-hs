@@ -1,26 +1,29 @@
 # This Week
 
-## Sunday (2022-05-08)
-- Last Week Tonight with John Oliver 9x10
-- The Rookie 4x21
+## Sunday (2022-05-15)
+- Last Week Tonight with John Oliver 9x11
+- The Rookie 4x22
 
-## Wednesday (2022-05-11)
-- The Flash 8x14
-- The Wonder Years 1x21
+## Monday (2022-05-16)
+- NCIS 19x20
 
-## Thursday (2022-05-12)
-- Bull 6x20
-- Star Trek: Strange New Worlds 1x2
+## Wednesday (2022-05-18)
+- The Flash 8x15
+- The Wonder Years 1x22
+
+## Thursday (2022-05-19)
+- Bull 6x21
+- Star Trek: Strange New Worlds 1x3
 
 # Currently Watching
 
 ## Bull
-- Last: 2022-04-28
-- Next: 2022-05-12
+- Last: 2022-05-12
+- Next: 2022-05-19
 
 ## Last Week Tonight with John Oliver
-- Last: 2022-05-01
-- Next: 2022-05-08
+- Last: 2022-05-08
+- Next: 2022-05-15
 
 ## Moon Knight
 - Last: 2022-05-04
@@ -39,20 +42,20 @@
 - Next: ?
 
 ## Star Trek: Strange New Worlds
-- Last: 2022-05-05
-- Next: 2022-05-12
+- Last: 2022-05-12
+- Next: 2022-05-19
 
 ## The Flash
-- Last: 2022-05-04
-- Next: 2022-05-11
+- Last: 2022-05-11
+- Next: 2022-05-18
 
 ## The Rookie
-- Last: 2022-05-01
-- Next: 2022-05-08
+- Last: 2022-05-08
+- Next: 2022-05-15
 
 ## The Wonder Years
-- Last: 2022-04-20
-- Next: 2022-05-11
+- Last: 2022-05-11
+- Next: 2022-05-18
 
 ## Whose Line Is It Anyway?
 - Last: 2022-04-09
