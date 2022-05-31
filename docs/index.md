@@ -1,54 +1,55 @@
 # This Week
 
-## Sunday (2022-05-22)
-- Last Week Tonight with John Oliver 9x12
+## Tuesday (2022-05-31)
+- Superman & Lois 2x12
 
-## Monday (2022-05-23)
-- NCIS 19x21
+## Wednesday (2022-06-01)
+- Obi-Wan Kenobi 1x3
 
-## Wednesday (2022-05-25)
-- The Flash 8x16
-
-## Thursday (2022-05-26)
-- Bull 6x22
-- Star Trek: Strange New Worlds 1x4
-
-## Friday (2022-05-27)
-- Obi-Wan Kenobi 1x1
+## Thursday (2022-06-02)
+- Star Trek: Strange New Worlds 1x5
 
 # Currently Watching
 
 ## Bull
-- Last: 2022-05-19
-- Next: 2022-05-26
+- Last: 2022-05-26
+- Next: ?
 
 ## Last Week Tonight with John Oliver
-- Last: 2022-05-15
-- Next: 2022-05-22
+- Last: 2022-05-22
+- Next: 2022-06-05
 
 ## Moon Knight
 - Last: 2022-05-04
 - Next: ?
 
+## Ms. Marvel
+- Last: ?
+- Next: 2022-06-08
+
 ## NCIS
-- Last: 2022-05-16
-- Next: 2022-05-23
+- Last: 2022-05-23
+- Next: ?
 
 ## Obi-Wan Kenobi
-- Last: ?
-- Next: 2022-05-27
+- Last: 2022-05-26
+- Next: 2022-06-01
 
 ## Star Trek: Picard
 - Last: 2022-05-05
 - Next: ?
 
 ## Star Trek: Strange New Worlds
-- Last: 2022-05-19
-- Next: 2022-05-26
+- Last: 2022-05-26
+- Next: 2022-06-02
+
+## Superman & Lois
+- Last: 2022-05-03
+- Next: 2022-05-31
 
 ## The Flash
-- Last: 2022-05-18
-- Next: 2022-05-25
+- Last: 2022-05-25
+- Next: 2022-06-08
 
 ## The Rookie
 - Last: 2022-05-15
