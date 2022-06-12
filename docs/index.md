@@ -1,18 +1,16 @@
 # This Week
 
-## Sunday (2022-06-05)
-- Last Week Tonight with John Oliver 9x13
+## Sunday (2022-06-12)
+- Last Week Tonight with John Oliver 9x14
 
-## Tuesday (2022-06-07)
-- Superman & Lois 2x13
+## Wednesday (2022-06-15)
+- Ms. Marvel 1x2
+- Obi-Wan Kenobi 1x5
+- The Flash 8x18
 
-## Wednesday (2022-06-08)
-- Ms. Marvel 1x1
-- Obi-Wan Kenobi 1x4
-- The Flash 8x17
-
-## Thursday (2022-06-09)
-- Star Trek: Strange New Worlds 1x6
+## Thursday (2022-06-16)
+- The Orville 3x3
+- Star Trek: Strange New Worlds 1x7
 
 # Currently Watching
 
@@ -21,40 +19,44 @@
 - Next: ?
 
 ## Last Week Tonight with John Oliver
-- Last: 2022-05-22
-- Next: 2022-06-05
+- Last: 2022-06-05
+- Next: 2022-06-12
 
 ## Moon Knight
 - Last: 2022-05-04
 - Next: ?
 
 ## Ms. Marvel
-- Last: ?
-- Next: 2022-06-08
+- Last: 2022-06-08
+- Next: 2022-06-15
 
 ## NCIS
 - Last: 2022-05-23
 - Next: ?
 
 ## Obi-Wan Kenobi
-- Last: 2022-06-01
-- Next: 2022-06-08
+- Last: 2022-06-08
+- Next: 2022-06-15
 
 ## Star Trek: Picard
 - Last: 2022-05-05
 - Next: ?
 
 ## Star Trek: Strange New Worlds
-- Last: 2022-06-02
-- Next: 2022-06-09
+- Last: 2022-06-09
+- Next: 2022-06-16
 
 ## Superman & Lois
-- Last: 2022-05-31
-- Next: 2022-06-07
+- Last: 2022-06-07
+- Next: 2022-06-21
 
 ## The Flash
-- Last: 2022-05-25
-- Next: 2022-06-08
+- Last: 2022-06-08
+- Next: 2022-06-15
+
+## The Orville
+- Last: 2022-06-09
+- Next: 2022-06-16
 
 ## The Rookie
 - Last: 2022-05-15
