@@ -17,11 +17,12 @@ import Dhall.Map (insert)
 import Lens.Micro.Platform (over)
 import Summary (getSummary)
 import Summary.Html (toHtml)
-import Summary.Markdown (toMarkdown)
+import Summary.Markdown (toMarkdown, toMarkdownGithub)
 
 data OutputFormat
     = Html
     | Markdown
+    | Github
     deriving (Show, Generic, FromDhall, ToDhall)
 
 data Config = Config {token :: Text, sIds :: Vector Text, format :: OutputFormat}
@@ -35,6 +36,7 @@ main = do
     T.putStrLn $ case format config of
         Html -> toHtml summary
         Markdown -> toMarkdown summary
+        Github -> toMarkdownGithub summary
   where
     evaluateSettings = over substitutions (insert "Format" formatType) defaultEvaluateSettings
     formatType = maximum $ expected (auto :: Decoder OutputFormat)

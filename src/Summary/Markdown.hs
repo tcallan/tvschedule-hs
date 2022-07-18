@@ -1,4 +1,4 @@
-module Summary.Markdown (toMarkdown) where
+module Summary.Markdown (toMarkdown, toMarkdownGithub) where
 
 import Data.Map.Strict (Map, foldlWithKey)
 import Data.Text (Text)
@@ -7,6 +7,9 @@ import Summary (SeriesSummary (..), Summary (..), WeeklyEpisode (..), toEpNumber
 
 toMarkdown :: Summary -> Text
 toMarkdown s = toMarkdownThisWeek (sThisWeek s) <> toMarkdownAll (sAll s)
+
+toMarkdownGithub :: Summary -> Text
+toMarkdownGithub s = toMarkdownThisWeek (sThisWeek s) <> toMarkdownAllTable (sAll s)
 
 toMarkdownThisWeek :: Map Day [WeeklyEpisode] -> Text
 toMarkdownThisWeek = foldlWithKey folder "# This Week\n\n"
@@ -27,3 +30,13 @@ toMarkdownAll = foldl f header
         current <> "## " <> ssName s <> "\n"
             <> ("- Last: " <> (tshowOpt . ssLastAir) s <> "\n")
             <> ("- Next: " <> (tshowOpt . ssNextAir) s <> "\n\n")
+
+toMarkdownAllTable :: [SeriesSummary] -> Text
+toMarkdownAllTable = foldl f header
+  where
+    header = "# Currently Watching\n\n| Series | Last | Next |\n| --- | --- | --- |\n"
+    f current s =
+        current <> "| " <> ssName s
+            <> (" | " <> (tshowOpt . ssLastAir) s)
+            <> (" | " <> (tshowOpt . ssNextAir) s)
+            <> " |\n"
