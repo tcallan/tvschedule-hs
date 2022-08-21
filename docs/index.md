@@ -7,6 +7,7 @@
 - Only Murders in the Building 2x10
 
 ## Thursday (2022-08-25)
+- Star Trek: Lower Decks 3x1
 - She-Hulk: Attorney at Law 1x2
 
 # Currently Watching
@@ -19,6 +20,7 @@
 | NCIS | 2022-05-23 | 2022-09-19 |
 | Only Murders in the Building | 2022-08-16 | 2022-08-23 |
 | She-Hulk: Attorney at Law | 2022-08-18 | 2022-08-25 |
+| Star Trek: Lower Decks | 2021-10-14 | 2022-08-25 |
 | Star Trek: Picard | 2022-05-05 | ? |
 | Star Trek: Strange New Worlds | 2022-07-07 | ? |
 | Superman & Lois | 2022-06-28 | ? |
